@@ -1,0 +1,213 @@
+:root{
+  --PrimaryColor: darkblue;
+  --GradientColor: linear-gradient(to right, hsl(187, 72%, 32%), hsl(211, 83%, 37%));
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(201, 33%, 16%);
+  --TextColor: hsl(240, 5%, 45%);
+  --WhileColorDeam: hsl(0, 0%, 93%);
+  --InputColor: rgb(239, 239, 239);
+  --GreyText: rgb(214, 214, 214);
+  --BodyColor: rgb(240, 240, 246);
+  --CardBG: rgb(255, 255, 235);
+  --SecondaryColor: rgba(206, 15, 31, 0.9);
+  --SearchColor: rgb(9, 70, 156);
+}
+
+
+.homeSection {
+  position: relative;
+  width: 100%;
+   height: 100vh;  /* viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* mờ video */
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  video {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    z-index: 0; 
+  }
+
+  .textDiv {
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); /* Center */
+
+    .smallText {
+      font-size: 18px;
+      color: white;
+      white-space: nowrap;
+      text-transform: uppercase;
+      margin-bottom: 10px; /* smallText và homeTitle */
+    }
+
+    .homeTitle {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    
+  }
+
+  .homeContent {
+    position: absolute;  
+    text-align: center; 
+    color: white;
+    top: 40%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%); /* Center */
+    
+    .carDiv{
+      width: 100%;
+      position: relative;
+      padding: 2rem 1rem;
+      background: var(--WhiteColor);
+      border-radius: 10px;
+      gap: 1rem;
+      z-index: 5;
+      color: black;
+
+      label{
+        display: block;
+        color: var(--SearchColor);
+        padding-bottom: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+      }
+      .lable_Total{
+        justify-content: space-between;
+        align-items: center;
+
+        .total{
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--SecondaryColor);
+        }
+
+      }
+
+      .input{
+        height: 50%;
+        width: 100%;
+        padding: 0 10px;
+        outline: none;
+        border-radius: 0.5rem;
+        background: var(--InputColor);
+
+        input{
+          background: none;
+          border: none;
+          outline: none;
+          padding: 5px;
+          width: 100%;
+          color: var(--TextColor);
+          font-size: 16px;
+          font-weight: 600;
+
+          &::placeholder{
+            font-size: 16px;
+            color: var(--TextColor);
+          }
+
+        }
+
+        .icon{
+          font-size: 20px;
+          color:var(--BlackColor)
+          !important;
+          margin-left: 10px;
+        }
+
+        .input[type="range"]{
+          background: red;
+        }
+
+      }
+
+      .searchOptions{
+        position: absolute;
+        background: var(--GradientColor);
+        width: max-content;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 0.5rem;
+        bottom: -1.2rem;
+        left: 50%;
+        transform: translate(-50%);
+        column-gap: 0.3rem; /* space icon and span */
+
+        &:hover{
+          cursor: pointer;
+          background: var(--SearchColor);
+        }
+
+        .icon{
+          font-size: 20px;
+          color: var(--WhiteColor);
+        }
+        
+        span{
+          font-size: 15px;
+          color: var(--WhiteColor);
+          font-weight: 600;
+          align-items: center;
+        }
+
+      }
+
+    }
+
+  }
+
+  .homeFooterIcon{
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    bottom: 5%;
+    padding: 0 3rem;
+
+    .icon{
+      font-size: 20px;
+      margin: 0 0.5rem;
+      color: var(--WhiteColor);
+      font-weight: 600;
+
+      &:hover{
+        cursor: pointer;
+        color: rgb(238, 215, 100);
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+

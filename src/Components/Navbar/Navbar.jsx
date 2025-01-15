@@ -31,9 +31,7 @@ function Navbar() {
               </a>
           </div>
 
-          <div className="navToggle" onClick={showNav}>
-              < RxDragHandleDots2 className="icon"/>
-          </div>
+
 
           <div className={active}>
             <ul className="navLists flex">
@@ -70,13 +68,16 @@ function Navbar() {
               </button>
             </ul>
 
-
-
             <div className="navClose" onClick={removeNav}>
               <IoMdCloseCircle className="icon"/> 
             </div>
-
+            
           </div>
+
+          <div className="navToggle" onClick={showNav}>
+              < RxDragHandleDots2 className="icon"/>
+          </div>
+
         </header>
       </section>
     </>

@@ -6,7 +6,7 @@
     - Chỉ tác dụng đối với các pt có thuộc tính position được đặt là relative, absolute, fixed, sticky. Các pt có thuộc tính position là static sẽ không bị ảnh hưởng
 
   # position: absolute;
-    - position: absolute; pt sẽ được "tách" ra khỏi dòng chảy bình thường của tài liệu (không chiếm không gian trong bố cục), và định vị bằng các thuộc tính như top, right, bottom, left
+    - position: absolute; pt sẽ được "tách" ra khỏi dòng chảy bình thường (không chiếm không gian trong bố cục), và định vị bằng các thuộc tính như top, right, bottom, left
 
   # transform: translate(-50%);
     - transform: Thuộc tính áp dụng các phép biến đổi như tịnh tiến, chia tỷ lệ, xoay

@@ -1,5 +1,5 @@
 :root{
-  --PrimaryColor: hsl(216, 100%, 29%);
+  --PrimaryColor: darkblue;
   --GradientColor: linear-gradient(to right, hsl(187, 85%, 39%), hsl(199, 100%, 31%));
   --WhiteColor: hsl(0, 0%, 100%);
   --BlackColor: hsl(201, 33%, 16%);
@@ -20,7 +20,7 @@
   background: var(--GreyText);
   width: 100%;
   padding: 0.3rem;
-  z-index: 1000;  // thứ tự chồng chéo
+  z-index: 100;  // thứ tự xep chồng
   box-shadow: 0 2px 4px rgba(13, 56, 103, 0.9);
 
   .logo{
@@ -29,6 +29,9 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    h1{
+      font-weight: bold;
+    }
   
     .icon{
       font-size: 30px;
@@ -38,6 +41,16 @@
   
   }
   
+  .navToggle{
+    .icon{
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.6);
+      &:hover{
+        color: var(--PrimaryColor);
+      }
+    }
+  }
+
   @media screen and (max-width: 760px) {
     .navBar{
       position: absolute;
@@ -50,7 +63,7 @@
       left: 50%;
       padding: 1rem;
       transform: translate(-50%);
-      z-index: 2000;
+      z-index: 200;
       box-shadow: 0 2px 4px rgba(13, 56, 103, 0.9);
       transition: 0.3s ease-in-out;
   
@@ -71,16 +84,19 @@
             &:hover{
               color: var(--PrimaryColor);
             }
+            &:focus{
+              color: var(--PrimaryColor);
+            }
           }
         }
   
         .btn{
           margin-top: 1rem;
-  
           a{
             font-weight: 600;
             color: var(--WhiteColor);
           }
+          
         }
       }
       .navClose{
@@ -101,18 +117,8 @@
     .activeNavbar{
       top: 4rem;
     }
-  }
-  
-  .navToggle{
-    .icon{
-      font-size: 25px;
-      color: var(--PrimaryColor);
-      &:hover{
-        color: var(--SecondaryColor);
-      }
-    }
-  }
 
+  }
 }
 
 
