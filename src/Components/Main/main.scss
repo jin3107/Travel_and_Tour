@@ -14,18 +14,20 @@
 
 .main{
   width: 100%;
-  
+
   .secTitle{
     .title{
       position: relative;
-      width: max-content;
+      width: 100%;
       color: var(--TextColor);
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       font-size: 2rem;
+      font-weight: 600;
       z-index: 2;
 
       &::after{
         position: absolute;
+        // background: purple;
         content: '';
         height: 5px;
         width: 200px;
@@ -48,7 +50,7 @@
       row-gap: 20px;
       //padding: 1rem;
       border-radius: 10px;
-      background-image: linear-gradient( to top , rgb(253, 253, 253) 26.8%, rgb(90, 114, 233) 64% );
+      background-image:  rgb(253, 253, 253);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
       align-items: center;
       overflow: hidden;

@@ -109,8 +109,6 @@ const data = [
 ]
 
 
-
-
 function Main() {
   return(
     <>
