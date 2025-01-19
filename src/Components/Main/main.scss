@@ -1,0 +1,176 @@
+:root{
+  --PrimaryColor: darkblue;
+  --GradientColor: linear-gradient(to right, hsl(187, 85%, 39%), hsl(199, 100%, 31%));
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(201, 33%, 16%);
+  --TextColor: hsl(240, 5%, 45%);
+  --WhileColorDeam: hsl(0, 0%, 93%);
+  --InputColor: rgb(239, 239, 239);
+  --GreyText: rgb(214, 214, 214);
+  --BodyColor: rgb(240, 240, 246);
+  --CardBG: rgb(255, 255, 235);
+  --SecondaryColor: rgba(206, 15, 31, 0.9);
+}
+
+.main{
+  width: 100%;
+  
+  .secTitle{
+    .title{
+      position: relative;
+      width: max-content;
+      color: var(--TextColor);
+      margin: 1rem 0;
+      font-size: 2rem;
+      z-index: 2;
+
+      &::after{
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 200px;
+        right: 0;
+        bottom: 5px;
+        z-index: -1;
+      }
+
+    }
+
+  }
+
+  .secContent{
+    justify-content: center;
+    gap: 1.5rem;
+
+    .card{
+      height: 100%;
+      display: grid;
+      row-gap: 20px;
+      //padding: 1rem;
+      border-radius: 10px;
+      background-image: linear-gradient( to top , rgb(253, 253, 253) 26.8%, rgb(90, 114, 233) 64% );
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      align-items: center;
+      overflow: hidden;
+      transition: 0.3s;
+
+      &:hover{
+        background-image: linear-gradient( 110deg, rgb(205, 241, 250) 26.8%, rgba(118, 162, 220, 0.625) 64% );     
+        transform: translateY(-10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+      }
+
+      .imgDiv{
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.3s;
+        }
+
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+
+      }
+
+      .cardInfo{
+        padding: 0.5rem 1.5rem;
+        
+        .title{
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: var(--PrimaryColor);
+        }
+
+        .continent{
+          gap: 0.2rem;
+
+          .icon{
+            color: brown;
+            font-size: 20px;
+          }
+
+          .local{
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+          }
+
+        }
+
+        .fees{
+          width: 100%;
+          justify-content: space-between;
+          padding: 5px;
+          margin: 0.5rem 0;
+          border-top: 1px solid var(--PrimaryColor);
+          border-bottom: 1px solid var(--PrimaryColor);
+        
+          .grade{
+            color: var(--TextColor);
+            max-width: 100px;
+            line-height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            small{
+              text-align: center;
+              color: purple;
+              font-weight: 800;
+              margin-left: 0.2rem;
+            }
+
+          }
+
+          .price{
+          
+            p{
+              color: brown;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+
+        }
+
+        .desc{
+
+          p{
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--BlackColor);
+          }
+
+        }
+
+        .btn{
+          width: max-content;
+          margin: 0.5rem 0.2rem;
+          color: var(--WhiteColor);
+          font-weight: 600;
+          justify-content: space-between;
+          gap: 0.5rem;
+
+          .icon{
+            align-self: center;
+            font-size: 1.5rem;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

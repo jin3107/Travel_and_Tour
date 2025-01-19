@@ -79,7 +79,6 @@ function Home() {
           </div>
 
       </section>
-      <h1>hellooooo</h1>
     </>
   )
 }
