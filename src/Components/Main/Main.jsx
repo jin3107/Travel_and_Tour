@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './main.scss'
 
 import { MdLocationOn } from "react-icons/md";
@@ -13,6 +13,11 @@ import img6 from '../../Assets/img/img6.jpg';
 import img7 from '../../Assets/img/img7.jpg';
 import img8 from '../../Assets/img/img8.jpg';
 import img9 from '../../Assets/img/img9.jpg';
+
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const data = [
   {
@@ -110,12 +115,17 @@ const data = [
 
 
 function Main() {
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return(
     <>
       <section className="main container section">
 
         <div className="secTitle">
-          <h1 className="title">
+          <h1 className="title" data-aos="fade-right">
             Most visited destinations
           </h1>
         </div>
@@ -125,7 +135,8 @@ function Main() {
             data.map(({id, imgScr, title, location, grade, price, description}) => {
               return(
                 <>
-                  <div className="card" key={id}>
+                  <div className="card" key={id} 
+                    data-aos="fade-up" data-aos-duration="4000">
 
                     <div className="imgDiv">
                       <img src={imgScr} alt={title}/>

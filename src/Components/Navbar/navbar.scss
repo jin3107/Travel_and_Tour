@@ -122,3 +122,10 @@
 }
 
 
+@media screen and (min-width: 760px){
+  .navClose, 
+  .navToggle{
+    display: none;
+    
+  }
+}

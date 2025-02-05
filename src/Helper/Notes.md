@@ -30,3 +30,6 @@
 
   # object-fit: cover; 
     kiểm soát cách nội dung bên trong một phần tử thay đổi kích thước và hiển thị khi kích thước của phần tử không khớp với tỷ lệ của nội dung. Nó thường được áp dụng cho các phần tử img hoặc video.
+
+  # mix-blend-mode: multiply; 
+    là một thuộc tính CSS được sử dụng để điều chỉnh cách một phần tử hòa trộn với phần tử nền bên dưới nó. Áp dụng các quy tắc hòa trộn màu sắc. multiply (nhân): Màu sắc của phần tử được nhân với màu của phần nền.
