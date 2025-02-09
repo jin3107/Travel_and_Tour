@@ -190,7 +190,7 @@ function Footer() {
 
             </div>
 
-            <div data-aos="fade-up" className="footerDiv flex">
+            <div className="footerDiv flex">
               <small>BEST TRAVEL WEBSITE THEME</small>
               <small>COPYRIGHT RESERVED - ISRATECH 2024</small>
             </div>

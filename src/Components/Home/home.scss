@@ -60,7 +60,7 @@
     }
 
     .homeTitle {
-      font-size: 40px;
+      font-size: 30px;
       color: white;
       font-weight: bold;
       white-space: nowrap;
@@ -68,23 +68,10 @@
     
   }
 
-  @media screen and (max-width: 760px){
-    .homeContent {
-      position: absolute;  
-      text-align: center; 
-      width: 80%;
-      color: white;
-      top: 40%;
-      left: 50%;
-      z-index: 3;
-      transform: translateX(-50%); /* Center */
-  }
-  }
 
   .homeContent {
     position: absolute;  
     text-align: center; 
-    width: 40%;
     color: white;
     top: 40%;
     left: 50%;
@@ -154,7 +141,7 @@
         }
 
         .input[type="range"]{
-          background: red;
+          background: yellow;
         }
 
       }
@@ -219,9 +206,69 @@
 
 }
 
+@media screen and (max-width: 760px){
+  .homeSection{
+    .homeContent{  
+      width: 70%;
+    }
+  }
+}
 
 
+@media screen and (min-width: 760px){
+  .homeSection{
+    .homeContent{  
+      width: 70%;
+      .textDiv{
+        .smallText{
+          font-size: 20px;          
+        }
+        .homeTitle{
+          position: relative;
+          font-size: 30px;
+          width: max-content;
 
+          &::after{
+            position: absolute;
+            content: "";
+            background: palevioletred;
+            height: 5px;
+            width: 150px;
+            right: 0;
+            bottom: 5px;
+            z-index: -1;
 
+          }
+        }
+      }
+
+    }
+  }
+  
+}
+
+@media screen and (min-width: 940px){
+  .homeSection{
+    height: 70vh;
+    .carDiv{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1240px){
+  .homeSection{
+    height: 65vh;
+    .homeContent{
+      padding-left: 0;
+      padding-right: 0;
+
+      .carDiv{
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
 
 

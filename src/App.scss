@@ -29,9 +29,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-
-
 a{
     text-decoration: none;
 }
@@ -39,25 +36,31 @@ a{
 li{
     list-style: none;
 }
+
 .section{
     padding: 1rem 0 2rem;
 }
+
 .container{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+
 .icon{
     font-size: 2rem;
     cursor: pointer;
 }
+
 .flex{
     display: flex;
     align-items: center;
 }
+
 .grid{
     display: grid;
     align-items: center;
 }
+
 .btn{
     padding: 0.6rem 1.5rem;
     background: var(--GradientColor);
@@ -66,21 +69,44 @@ li{
     outline: none;
     cursor: pointer;
 }
+
 .btn a{
     color: var(--WhiteColor);
     font-weight: 500;
 }
+
 .btn:hover{
     background: var();
 }
+
 img, video{
     width: 100%;
     height: auto;
 }
+
 input{
     font-size: 100%;
 }
+
 body{
     background: var(--BodyColor);
+}
+
+/*Media ...*/
+
+@media screen and (min-width: 1240px){
+    .container{
+        width: 95% !important;
+        margin: auto !important;
+    }
+    .section{
+        padding: 1rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    body{
+        zoom: 1.7;
+    }
     
 }

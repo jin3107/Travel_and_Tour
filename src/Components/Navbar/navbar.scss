@@ -51,7 +51,8 @@
     }
   }
 
-  @media screen and (max-width: 760px) {
+
+  @media screen and (max-width: 769px) {
     .navBar{
       position: absolute;
       background: var(--WhileColorDeam);
@@ -82,10 +83,10 @@
             font-size: 1rem;
             font-weight: 600;
             &:hover{
-              color: var(--PrimaryColor);
+              color: rosybrown;
             }
             &:focus{
-              color: var(--PrimaryColor);
+              color: khaki;
             }
           }
         }
@@ -119,13 +120,75 @@
     }
 
   }
+
 }
+
+
+//Media Queries=======================
+
 
 
 @media screen and (min-width: 760px){
   .navClose, 
   .navToggle{
     display: none;
+  }
+
+  .header{
+    padding: 0.5rem 0.5rem;
+    .navBar{
+      .navLists{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      
+        .navItem{
+          color: var(--TextColor);
+          padding: 0 0.5rem;
+          font-size: 15px;
+          font-weight: 600;
+
+          &:hover{
+            color: var(--PrimaryColor);
+          }
+        }
+
+        .btn{
+          margin-left: 0.5rem;
+          a{
+            font-weight: 600;
+            color: var(--WhiteColor);
+          }
+        }
+      
+      }
+    }
+
+  }
+
+
+
+
+}
+
+
+@media screen and (min-width: 960px){
+  .header{
+    .navBar{
+      .navLists{
+        .navItem{
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1240px){
+  .header{
+    padding: 0.5rem 1rem;
     
   }
 }
