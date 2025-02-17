@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://RianPham.github.io/Travel_and_Tour/",
+  "homepage": "https://rianpham.github.io/Travel_and_Tour/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
